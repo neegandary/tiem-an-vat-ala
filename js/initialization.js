@@ -91,7 +91,11 @@ function createProduct() {
             price: 15000,
             desc: 'Gồm: 4 viên'
         },
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 9f6c66d79f776d4bf66af2ca11e13a0de1a29c2e
         ]
         localStorage.setItem('products', JSON.stringify(products));
     }
