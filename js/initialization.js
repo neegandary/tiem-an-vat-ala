@@ -103,20 +103,20 @@ function createAdminAccount() {
     if (!accounts) {
         accounts = [];
         accounts.push({
-            fullname: "Hoàng Gia Bảo",
+            fullname: "Nguyễn Văn Minh Nhật",
             phone: "hgbaodev",
-            password: "123456",
-            address: 'https://github.com/hgbaodev',
-            email: 'musicanime2501@gmail.com',
+            password: "25112005",
+            address: 'https://github.com/neegandary',
+            email: 'nguyenvanminhnhat2511@gmail.com',
             status: 1,
             join: new Date(),
             cart: [],
             userType: 1
         })
         accounts.push({
-            fullname: "Trần Nhật Sinh",
+            fullname: "Tiem An Vat Ala",
             phone: "0123456789",
-            password: "123456",
+            password: "ala123@",
             address: '',
             email: '',
             status: 1,
