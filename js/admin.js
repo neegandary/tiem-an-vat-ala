@@ -8,6 +8,8 @@ function checkLogin() {
         document.getElementById("name-acc").innerHTML = currentUser.fullname;
     }
 }
+
+
 window.onload = checkLogin();
 
 //do sidebar open and close
@@ -330,7 +332,10 @@ function setDefaultValue() {
     document.getElementById("mo-ta").value = "";
     document.getElementById("chon-mon").value = "Món chay";
 }
+function checkForNewOrder(){
+    return { "newOrders": true };
 
+}
 // Open Popup Modal
 let btnAddProduct = document.getElementById("btn-add-product");
 btnAddProduct.addEventListener("click", () => {

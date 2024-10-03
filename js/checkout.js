@@ -222,12 +222,8 @@ function xulyDathang(product) {
     }
     if(tudenlay.classList.contains("active")){
         let chinhanh1 = document.querySelector("#chinhanh-1");
-        let chinhanh2 = document.querySelector("#chinhanh-2");
         if(chinhanh1.checked) {
-            diachinhan = "273 An Dương Vương, Phường 3, Quận 5";
-        }
-        if(chinhanh2.checked) {
-            diachinhan = "04 Tôn Đức Thắng, Phường Bến Nghé, Quận 1";
+            diachinhan = "Khu ẩm thực đối diện S3.05 - Vinhome Grand Park - Đường Cầu Vồng - Phường Long Thạnh Mỹ - Quận 9 - Thành Phố Thủ Đức";
         }
         hinhthucgiao = tudenlay.innerText;
     }
