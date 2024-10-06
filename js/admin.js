@@ -914,3 +914,35 @@ document.getElementById("logout-acc").addEventListener('click', (e) => {
     localStorage.removeItem("currentuser");
     window.location = "/";
 })
+
+// Khi nhấn nút thêm sản phẩm
+$('#add-product-button').on('click', function() {
+    let productName = $('#product-name').val();
+    let productPrice = $('#product-price').val();
+    // Các thông tin sản phẩm khác
+
+    $.ajax({
+        url: 'add_product.php', // URL của API thêm sản phẩm
+        method: 'POST',
+        data: {
+            product_name: productName,
+            product_price: productPrice,
+            // Các thông tin khác
+        },
+        success: function(response) {
+            let res = JSON.parse(response);
+            if (res.success) {
+                // Cập nhật UI, thêm sản phẩm mới vào danh sách
+                $('#product-list').append(`
+                    <div class="product-item">
+                        <h3>${productName}</h3>
+                        <p>Price: ${productPrice}</p>
+                    </div>
+                `);
+            } else {
+                alert('Failed to add product');
+            }
+        }
+    });
+});
+

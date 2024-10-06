@@ -740,7 +740,7 @@ header {
 }
 
 .product-price .current-price {
-    color: var(--red);
+    color: #f0d26c;
     font-weight: 600;
     font-size: 15px
 }
@@ -759,7 +759,7 @@ header {
 }
 
 .card-button {
-    background-color: #d63d3d;
+    background-color: #f0d26c;
     outline: none;
     border: none;
     width: 85%;
